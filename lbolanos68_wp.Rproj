@@ -13,4 +13,4 @@ RnwWeave: Sweave
 LaTeX: pdfLaTeX
 
 BuildType: Website
-WebsitePath: ~/Documents/GitHub/lbolanos68.github.io/lbolanos68_wp
+WebsitePath: ~/Documents/GitHub/lbolanos68.github.io
