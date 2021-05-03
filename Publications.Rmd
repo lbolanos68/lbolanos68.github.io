@@ -1,0 +1,77 @@
+---
+name: Publications
+---
+
+ <h1>Publications</h1>
+ 
+A list of my publications is also available on [**Google scholar profile**](https://scholar.google.com/citations?user=okVkAH8AAAAJ&hl=en&authuser=1)
+
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">14 Washburn, Q., Wolf, S.,Well, J., Noell, S., Lee, CP., Bolaños, L.M., Giovannoni, S.J., Suffridge, C. P. (2021) Oligotrophic
+A marine microbiology board game-based activity for high school science classrooms. The Science Teacher, 88(5). [**https://www.nsta.org/science-teacher/science-teacher-mayjune-2021/oligotrophic**](https://www.nsta.org/science-teacher/science-teacher-mayjune-2021/oligotrophic)</p></right>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">13 Bolaños, L.M., Choi, C.J., Worden, A.Z., Baetge, N., Carlson, C.A., Giovannoni, S.J. (2021) Seasonality of the microbial community composition in the North Atlantic. Frontiers in Marine Science, 8:624164. [**doi:10.3389/fmars.2021.624164**](https://doi.org/10.3389/fmars.2021.624164)</p></right>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">12 Buchholz, H.H., Michelsen, M., Bolaños, L.M., Browne, E., Allen, M.J., Temperton, B. (2021) Efficient Dilution-to-Extinction isolation of novel virus-host model systems for fastidious heterotrophic bacteria. The ISME Journal, 1-14. [**doi.org/10.1038/s41396-020-00872-z**](https://doi.org/10.1038/s41396-020-00872-z)</p></right>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">11 Suffridge, C. P., Bolaños L.M., Worden, A.Z., Bergauer, K., Morré J., Behrenfeld, M.J., and Giovannoni, S. J. (2020) Exploring Vitamin B1 cycling and its connections to the microbial community in the North Atlantic Ocean. Frontiers in Marine Science, 7:606342. [**doi.org/10.3389/fmars.2020.606342**](https://doi.org/10.3389/fmars.2020.606342)</p></right>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">10 Maas, A.E., Liu, S., Bolaños, L.M., Widner, B., Parsons, R., Kujawinski, E.B., Blanco-Bercial, L., Carlson, C.A. (2020) Migratory Zooplankton Excreta and its Influence on Prokaryotic Communities. Frontiers in Marine Science. 7:573268. [**doi.org/10.3389/fmars.2020.573268**](https://doi.org/10.3389/fmars.2020.573268)</p></right>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">9 Liu, S., Baetge, N., Comstock, J., Opalk, K., Parsons, R., Halewood, E., English, C., Giovannoni, S.J., Bolaños, L.M., Nelson, C.E.,Vergin, K., Carlson, C.A. (2020). Stable isotope probing identifies bacterioplankton lineages capable of utilizing dissolved organic matter across a range of bioavailability. Frontiers in Microbiology. 11:2364. [**doi.org/10.3389/fmicb.2020.580397**](https://doi.org/10.3389/fmicb.2020.580397)</p></right>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">8 Bolaños, L.M., Karp-Boss, L., Choi, C.J., Worden, A.Z., Graff, J.R., Haëntjens, N., Chase, A.P., Della Penna, A., Gaube, P., Morison, F., Menden-Deuer, S., Westberry, T.K., O’Malley, R.T., Boss, E., Behrenfeld, M.J., Giovannoni, S.J. (2020). Small phytoplankton dominate western North Atlantic biomass. The ISME Journal. 14:1663–1674. [**doi.org/10.1038/s41396-020-0636-0**](https://doi.org/10.1038/s41396-020-0636-0) </p></right>
+Featured on [**The Guardian (3 Apr 2020)**](https://www.theguardian.com/environment/2020/apr/03/oceans-capacity-to-absorb-co2-overestimated-study-suggests) North Atlantic's capacity to absorb CO2 overestimated, study suggests by Jonathan Watts
+<br>
+Featured on [**The Molecular Ecologist (7 Apr 2020)**](https://www.molecularecologist.com/2020/04/a-bloom-by-any-other-name/) A bloom by any other name by Kelle Freel
+<br>
+Featured on [**The ISME Journal 2020 Best Paper Award (7 Apr 2020)**](https://www.nature.com/collections/acidjaejdg) Shortlisted among the most impactful articles in the journal
+<br>
+Featured on [**The Corvallis Advocate: Oregon State’s Year in Science (Dec 26 2020)**](https://www.corvallisadvocate.com/2020/oregon-states-year-in-science/) 
+<br>
+Press release [**Newsroom Oregon State University**](https://today.oregonstate.edu/news/smaller-expected-phytoplankton-may-mean-less-carbon-sequestered-sea-bottom) 
+<br>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">7 Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L.M., Kujawinski, E.B., Longnecker, K., Lu, Y., Halewood, E., Carlson, C.A. (2020). Different carboxyl-rich alicyclic molecules (CRAM) proxy compounds select distinct bacterioplankton for oxidation of DOM in the mesopelagic Sargasso Sea. Limnology and Oceanography. 65: 1532–1553. [**doi.org/10.1002/lno.11405**](https://doi.org/10.1002/lno.11405)</p></right>
+Featured on [**Eurekalert.org (26 Feb 2020)**](https://www.eurekalert.org/pub_releases/2020-02/uoc--bds022620.php) Breaking down stubborn molecules in the ocean
+<br>
+Featured on [**Sciencedaily (26 Feb 2020)**](https://www.sciencedaily.com/releases/2020/02/200226130521.htm) Breaking down stubborn molecules in the ocean
+<br>
+Press release [**The Current University of California Santa Barbara**](https://www.news.ucsb.edu/2020/019802/breaking-down-stubborn-molecules)
+<br>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">6 Behrenfeld, M., Moore, R., Hostetler, C., Graff, J., Gaube, P., Russell, L., Gao Chen, G., Doney, C., Giovannoni, S., Liu, H., Proctor, C., Bolaños, L.M., Baetge, N., Davie-Martin, C., Westberry, T., Bates,T., Bell, T., Bidle, K., Boss, E., Brooks, S., Cairns, B., Carlson, C., Halsey, K., Harvey, E., Hu, C., Karp-Boss, L., Kleb, M., Menden-Deuer, S., Quinn, P., Scarino, A., Anderson, B., Chowdhary, J., Crosbie, E., Ferrare, R., Hair, J., Hu, Y., Janz, S., Redemann,J., Saltzman, E., Shook, M., Siegel, D., and Ziemba L. (2019). The North Atlantic Aerosol and Marine Ecosystem Study (NAAMES): Science motive and mission overview. Frontiers in Marine Science, 6:122. [**doi.org/10.3389/fmars.2019.00122**](https://doi.org/10.3389/fmars.2019.00122)</p></right>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">5 Bolaños, L.M., Rosenblueth, M., Manrique de Lara, A., Migueles-Lozano, A., Gil-Aguillón, C., Mateo-Estrada, V., González-Serrano, F., Santibáñez-López, C., García-Santibáñez, T., and Martínez-Romero. E. (2019). Cophylogenetic analysis suggests cospeciation between the Scorpion Mycoplasma Clade symbionts and their hosts. PLoS ONE 14: e0209588. [**doi.org/10.1371/journal.pone.0209588**](https://doi.org/10.1371/journal.pone.0209588)</p></right>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">4 Bolaños, L.M.,Rosenblueth, M., Castillo‐Ramírez, S., Figuier‐Huttin, G., and Martínez‐Romero, E. (2016). Species‐specific diversity of novel bacterial lineages and differential abundance of predicted pathways for toxic compound degradation in scorpion gut microbiota. Environmental microbiology, 18:1364-1378. [**doi.org/10.1111/1462-2920.12939**](https://doi.org/10.1111/1462-2920.12939)</p></right>
+Featured on [**Microbiome Digest – Bik's Picks (11 Jun 2015)**](https://microbiomedigest.com/2015/06/11/june-11-2015/) Animal microbiome:Species-specific diversity of novel bacterial lineages and differential abundance of predicted pathways for toxic compound degradation in scorpion gut microbiota.
+<br>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">3 Bolaños, L.M., Servín-Garcidueñas, L.E., and Martínez-Romero, E. (2015). Arthropod–Spiroplasma relationship in the genomic era. FEMS microbiology ecology, 91:1-8. [**doi.org/10.1093/femsec/fiu008**](https://doi.org/10.1093/femsec/fiu008)</p></right>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">2 Degli Esposti, M., Rosas-Pérez, T., Servín-Garcidueñas, L.E., Bolaños, L.M., Rosenblueth, M., and Martínez-Romero, E. (2015). Molecular evolution of cytochrome bd oxidases across proteobacterial genomes. Genome biology and evolution, 7:801-820.[**doi.org/10.1093/gbe/evv032**](https://doi.org/10.1093/gbe/evv032)</p></right>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">1 Ramírez-Puebla, S.T., Servín-Garcidueñas, L.E., Jiménez-Marín, B., Bolaños, L.M., Rosenblueth, M., Martínez, J., Rogel, M.A., Ormeño-Orrillo, E., and Martínez-Romero, E. (2013). Gut and root microbiota commonalities. Applied and environmental microbiology, 79:2-9.[**doi.org/10.1128/AEM.02553-12**](https://doi.org/10.1128/AEM.02553-12) </p></right>
+<br>
+<br>
+<h2>Contributions to symposia</h2>
+<h3>**Ocean Sciences meeting. San Diego, CA. 2020**</h3>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;"> 8 ME11A-01 Linking phytoplankton diversity in the North Atlantic to the annual cycle of ecological disturbance and recovery. L Karp-Boss, L M Bolaños, S J Giovannoni, J Gra􏰂, C Carbonell-Moore, N Haentjens, A Chase, E Boss, M Behrenfeld </p></right>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;"> 7 MM12A-04 Protist plankton seasonality and community structure in the epi- and mesopelagic at BATS. L Blanco Bercial, R J Parsons, L M Bolaños, N McDonald, S J Giovannoni, R Curry </p></right>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;"> 6 ED34A-3641 Pntroducing Oligotrophic, a Board Game Designed as an Interactive Learning Experience in Microbial Ecology and Biogeochemistry, a Tool for Science Communication, and Curriculum for Elementary through High School Teachers. C Su􏰂ridge, Q L Washburn, J Well, S Noell, S S Wolf, C P Lee, L M Bolaños, S J Giovannoni </p></right>
+<br>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;"> 5 OB43C-05 Exploring Vitamin B1 Cycling and its Connections to the Microbial Community in the North Atlantic Ocean. C Su􏰂ridge, L M Bolaños, A Z Worden, K Bergauer, J Morré, M Behrenfeld, S J Giovannoni </p></right>
+
+<h3>**Aquatic Sciences meeting. San Juan, PR. 2019**</h3>
+
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;"> 4 SS011 Diverse Phytoplankton Form the western North Atlantic Spring Bloom. , L M Bolaños, S Menden-Deuer, L Karp-Boss, F Morison, C J Choi, A Z Worden, J Graff, C Carbonell-Moore, T K Westberry, A P Chase, N Haëntjens, P Gaube, E Boss, M Behrenfeld, S J Giovannoni</p></right>
+
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;"> 3 CS013 Stable isotope probing identifies bacterioplankton lineages capable of utilizing DOM across a range of bioavailability. S Liu, N Huynh, J Comstock, K Opalk, E Halewood, C English, R Parsons, S Giovannoni, L M Bolaños, C Carlson </p></right>
+
+<h3>**Ocean Sciences meeting. Portland, OR. 2018**</h3>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;"> 2 MM24B NAAMES (North Atlantic Aerosols and Marine Ecosystems Study) observations of non-diatom dominated plankton communities in late autumn and spring. L M Bolaños, S Menden-Deuer, L Karp-Boss, F Morison, E Boss, A P Chase, N Haëntjens, C J Choi, A Z Worden, J Graff,T K Westberry, M Behrenfeld, K Halsey, C Davie-Martin, C A Carlson, S J Giovannoni</p></right>
+
+<h3>**8th International Symbiosis Society (ISS) congress. Lisbon, Portugal. 2015**</h3>
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">  1 IFM Species-specific diversity of novel bacterial lineages and differential abundance of pathways for toxic compound degradation in scorpion gut microbiota. L M Bolaños, M Rosenblueth, S Castillo-Ramirez, E Martínez-Romero</p></right>
