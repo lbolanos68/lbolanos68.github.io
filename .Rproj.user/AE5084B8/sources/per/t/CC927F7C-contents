@@ -1,0 +1,27 @@
+name: "Luis M Bolaños"
+output_dir: "."
+navbar:
+  title: "Luis M Bolaños"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Research"
+      href: ResInt.html
+    - text: "Fieldwork"
+      href: Fieldwork.html
+    - text: "Publications"
+      href: Publications.html
+
+  right:
+    - icon: fab fa-github fa-lg
+      href: http://github.com/lbolanos68
+    - icon: fab fa-twitter fa-lg
+      href: https://twitter.com/lbolanos68
+    - icon: fab fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/luis-bolanos-4b703b43/
+      
+output:
+  html_document:
+    theme: flatly
+    css: CSSBackgrounds.css
+    self_contained: FALSE
