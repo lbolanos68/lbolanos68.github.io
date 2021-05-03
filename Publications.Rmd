@@ -6,7 +6,7 @@ name: Publications
  
 A list of my publications is also available on [**Google scholar profile**](https://scholar.google.com/citations?user=okVkAH8AAAAJ&hl=en&authuser=1)
 
-<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">14 Washburn, Q., Wolf, S.,Well, J., Noell, S., Lee, CP., Bolaños, L.M., Giovannoni, S.J., Suffridge, C. P. (2021) Oligotrophic
+<right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">14 Washburn, Q., Wolf, S., Well, J., Noell, S., Lee, CP., Bolaños, L.M., Giovannoni, S.J., Suffridge, C. P. (2021) Oligotrophic
 A marine microbiology board game-based activity for high school science classrooms. The Science Teacher, 88(5). [**https://www.nsta.org/science-teacher/science-teacher-mayjune-2021/oligotrophic**](https://www.nsta.org/science-teacher/science-teacher-mayjune-2021/oligotrophic)</p></right>
 <br>
 <right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">13 Bolaños, L.M., Choi, C.J., Worden, A.Z., Baetge, N., Carlson, C.A., Giovannoni, S.J. (2021) Seasonality of the microbial community composition in the North Atlantic. Frontiers in Marine Science, 8:624164. [**doi:10.3389/fmars.2021.624164**](https://doi.org/10.3389/fmars.2021.624164)</p></right>
