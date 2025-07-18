@@ -15,8 +15,6 @@ navbar:
   right:
     - icon: fab fa-github fa-lg
       href: http://github.com/lbolanos68
-    - icon: fab fa-twitter fa-lg
-      href: https://twitter.com/lbolanos68
     - icon: fab fa-linkedin fa-lg
       href: https://www.linkedin.com/in/luis-bolanos-4b703b43/
       

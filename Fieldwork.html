@@ -11,9 +11,10 @@
 
 
 
-<title></title>
+<title>Fieldwork.knit</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -31,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -53,6 +54,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -82,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -139,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -172,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -181,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -234,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -264,12 +266,6 @@ $(document).ready(function () {
   </a>
 </li>
 <li>
-  <a href="https://twitter.com/lbolanos68">
-    <span class="fab fa-twitter fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="https://www.linkedin.com/in/luis-bolanos-4b703b43/">
     <span class="fab fa-linkedin fa-lg"></span>
      
@@ -288,76 +284,114 @@ $(document).ready(function () {
 </div>
 
 
-<br> <img src="images/NAAMESheader.png" style="width:100%; border:1px solid black" align="center">
+<br>
+<img src="images/NAAMESheader.png" style="width:100%; border:1px solid black" align="center">
 <center>
 <h3>
-<strong>The North Atlantic Aerosols and Marine Ecosystems Study (NAAMES)</strong>
+<strong>The North Atlantic Aerosols and Marine Ecosystems Study
+(NAAMES)</strong>
 </h3>
 <center>
 <br>
 <center>
 <p style="font-family:Geneva;text-align:left;color:black;font-size:20px;text-align:justify">
-NAAMES was a five-year NASA study (2015-2019) that looked at the influences of phytoplankton on atmospheric aerosols and clouds. As part of NAAMES, the contribution of Dr. Stephen Giovannoni and myself was to generate 16S rRNA amplicon profiles to have a highly-resolved identification of the plankton communties.<br> I participated in 3 out of 4 field campaigns. Find more details for each campaign in the buttons below
+NAAMES was a five-year NASA study (2015-2019) that looked at the
+influences of phytoplankton on atmospheric aerosols and clouds. As part
+of NAAMES, the contribution of Dr. Stephen Giovannoni and myself was to
+generate 16S rRNA amplicon profiles to have a highly-resolved
+identification of the plankton communties.<br> I participated in 3 out
+of 4 field campaigns. Find more details for each campaign in the buttons
+below
 </p>
 </center>
 <p style="text-align:left;color:black;font-size:18px;">
 Click the links below for more informartion about the NAAAMES project.
 </p>
-<p><a href="https://naames.larc.nasa.gov"><strong>NAAMES official website</strong></a> <br> <a href="https://earthobservatory.nasa.gov/blogs/fromthefield/category/naames/"><strong>Notes from the field NASA Earth Observatory</strong></a><br> <a href="https://climate.nasa.gov/news/2621/tiny-organisms-giant-impact/"><strong>Tiny organisms, giant impact</strong></a><br></p>
-<div id="section" class="section level1 tabset tabset-fade tabset-pills">
-<h1></h1>
-<hr />
-<div id="naames-2" class="section level2">
-<h2>NAAMES 2</h2>
+<p><a href="https://naames.larc.nasa.gov"><strong>NAAMES official
+website</strong></a> <br> <a
+href="https://earthobservatory.nasa.gov/blogs/fromthefield/category/naames/"><strong>Notes
+from the field NASA Earth Observatory</strong></a><br> <a
+href="https://climate.nasa.gov/news/2621/tiny-organisms-giant-impact/"><strong>Tiny
+organisms, giant impact</strong></a><br></p>
+#{.tabset .tabset-fade .tabset-pills} *** ## NAAMES 2
 <p style="font-family:Geneva;text-align:left;color:black;font-size:16px;">
-NAAMES 2 took place in May 2016. Departing from Woodshole, MA to our first station at latitude ~51 N.
+NAAMES 2 took place in May 2016. Departing from Woodshole, MA to our
+first station at latitude ~51 N.
 </p>
 <br>
 <p align="middle">
-<img src="images/yo_N2.jpg" style="width:32%; border:1px solid black"> <img src="images/N2_wave.JPG" style="width:32.2%; border:1px solid black"> <img src="images/N2_bottles.jpg" style="width:33%; border:1px solid black">
+<img src="images/yo_N2.jpg" style="width:32%; border:1px solid black">
+<img src="images/N2_wave.JPG" style="width:32.2%; border:1px solid black">
+<img src="images/N2_bottles.jpg" style="width:33%; border:1px solid black">
 </p>
-</div>
 <div id="naames-3" class="section level2">
 <h2>NAAMES 3</h2>
 <p style="font-family:Geneva;text-align:left;color:black;font-size:16px;">
-NAAMES 3 took place in September 2017. Departing from Woodshole, MA to our first station at latitude ~42 N.
+NAAMES 3 took place in September 2017. Departing from Woodshole, MA to
+our first station at latitude ~42 N.
 </p>
-<p><br> <img src="images/N3_yo.jpg" style="width:32%; border:1px solid black"> <img src="images/N3_all.jpg" style="width:32%; border:1px solid black"> <img src="images/N3_sunst.jpg" style="width:28.3%; border:1px solid black"></p>
+<p><br>
+<img src="images/N3_yo.jpg" style="width:32%; border:1px solid black">
+<img src="images/N3_all.jpg" style="width:32%; border:1px solid black">
+<img src="images/N3_sunst.jpg" style="width:28.3%; border:1px solid black"></p>
 </div>
 <div id="naames-4" class="section level2">
 <h2>NAAMES 4</h2>
 <p style="font-family:Geneva;text-align:left;color:black;font-size:16px;">
-NAAMES 4 took place in March-April 2018. Departing from San Juan, PR to the first station at latitude ~32 N.
+NAAMES 4 took place in March-April 2018. Departing from San Juan, PR to
+the first station at latitude ~32 N.
 </p>
 <p><br></p>
 <p style="text-align:middle;color:black;font-size:18px;">
-This cruise was featured on Chronicle 5 WCVB. Click on the links to see the videos.
+This cruise was featured on Chronicle 5 WCVB. Click on the links to see
+the videos.
 </p>
-<p><br> <a href="https://www.youtube.com/watch?v=Fp3bNkXzbLI"><strong>On board a floating sea lab / ep 1</strong></a><br> <a href="https://www.youtube.com/watch?v=YKbHJHfChSw"><strong>Scientific research that cannot be done on shore / ep 2</strong></a><br> <a href="https://www.youtube.com/watch?v=gUUoa9JgujE"><strong>Working aboard the R/V Atlantis during turbulent seas / ep 3</strong></a><br> <a href="https://www.youtube.com/watch?v=O5QAg8L_xNM"><strong>Researching the secrets of the sea / ep 4</strong></a><br> <br> <img src="images/N4sunst.jpg" style="width:35.5%; border:1px solid black"> <img src="images/N4rainbow.jpg" style="width:24.4%; border:1px solid black"> <img src="images/N4alll.jpg" style="width:26.2%; border:1px solid black"></p>
+<p><br> <a href="https://www.youtube.com/watch?v=Fp3bNkXzbLI"><strong>On
+board a floating sea lab / ep 1</strong></a><br> <a
+href="https://www.youtube.com/watch?v=YKbHJHfChSw"><strong>Scientific
+research that cannot be done on shore / ep 2</strong></a><br> <a
+href="https://www.youtube.com/watch?v=gUUoa9JgujE"><strong>Working
+aboard the R/V Atlantis during turbulent seas / ep 3</strong></a><br> <a
+href="https://www.youtube.com/watch?v=O5QAg8L_xNM"><strong>Researching
+the secrets of the sea / ep 4</strong></a><br> <br>
+<img src="images/N4sunst.jpg" style="width:35.5%; border:1px solid black">
+<img src="images/N4rainbow.jpg" style="width:24.4%; border:1px solid black">
+<img src="images/N4alll.jpg" style="width:26.2%; border:1px solid black"></p>
 </div>
-</div>
-<div id="section-1" class="section level1 unnumbered">
-<h1></h1>
-<br> <br> <br> <br> <br> <img src="images/BIOS-SCOPE-LOGO.png" style="width:40%; heigth=40%;border:1px solid black" align="center"> <br> <br>
+<div id="section" class="section level1 unnumbered">
+<h1 class="unnumbered"></h1>
+<br> <br> <br> <br> <br>
+<img src="images/BIOS-SCOPE-LOGO.png" style="width:40%; heigth=40%;border:1px solid black" align="center">
+<br> <br>
 <center>
 <p style="text-align:left;color:black;font-size:20px;text-align:justify">
-BIOS-SCOPE is a five-year multi-institutional research program for the study of microbial oceanography in the North Atlantic Ocean. Established in 2015, BIOS-SCOPE leverages ocean measurements and ongoing research at the Bermuda Atlantic Time-series Study (BATS) site.
+BIOS-SCOPE is a five-year multi-institutional research program for the
+study of microbial oceanography in the North Atlantic Ocean. Established
+in 2015, BIOS-SCOPE leverages ocean measurements and ongoing research at
+the Bermuda Atlantic Time-series Study (BATS) site.
 </p>
 </center>
 <p style="text-align:left;color:black;font-size:18px;">
 Click the link below for more informartion about the BIOS-SCOPE project.
 </p>
-<a href="http://scope.bios.edu"><strong>BIOS-SCOPE official website</strong></a> <br><br>
+<a href="http://scope.bios.edu"><strong>BIOS-SCOPE official
+website</strong></a> <br><br>
 <p align="middle">
 <center>
 <p style="text-align:left;color:black;font-size:20px;text-align:justify">
-Contributions:<br> a) rRNA amplicon profile generation and analysis.<br> b) AE1703 Field Campaign. Charlston, SC to BATS.
+Contributions:<br> a) rRNA amplicon profile generation and analysis.<br>
+b) AE1703 Field Campaign. Charlston, SC to BATS. <br> c) AE2213 Field
+Campaign BATS.
 </p>
 </center>
-<img src="images/bermuda.jpg" style="width:31%; border:1px solid black"> <img src="images/atlant_bios.jpg" style="width:28.3%; border:1px solid black"> <img src="images/charl.jpg" style="width:35%; border:1px solid black">
+<img src="images/bermuda.jpg" style="width:31%; border:1px solid black">
+<img src="images/atlant_bios.jpg" style="width:28.3%; border:1px solid black">
+<img src="images/charl.jpg" style="width:35%; border:1px solid black">
 </p>
 <p align="middle">
-<img src="images/shipy.jpg" style="width:22%; border:1px solid black"> <img src="images/bmda.jpg" style="width:32%; border:1px solid black"> <img src="images/charlst.jpg" style="width:33%; border:1px solid black">
+<img src="images/shipy.jpg" style="width:22%; border:1px solid black">
+<img src="images/bmda.jpg" style="width:32%; border:1px solid black">
+<img src="images/charlst.jpg" style="width:33%; border:1px solid black">
 </p>
 </div>
 

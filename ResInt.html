@@ -11,9 +11,10 @@
 
 
 
-<title></title>
+<title>ResInt.knit</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -31,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -53,6 +54,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -82,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -139,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -172,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -181,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -234,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -260,12 +262,6 @@ $(document).ready(function () {
         <li>
   <a href="http://github.com/lbolanos68">
     <span class="fab fa-github fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://twitter.com/lbolanos68">
-    <span class="fab fa-twitter fa-lg"></span>
      
   </a>
 </li>
@@ -322,23 +318,35 @@ Marine Microbial Diversity and Ecology
 <div class="column" style="background-color:white;">
 <right>
 <p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">
-Marine microbes are a fundamental part of the earth's biosphere. Their unique metabolism, versatility and intricate interactions contribute to important steps of the elements' biogechemical cycles.
+Marine microbes are a fundamental part of the earth’s biosphere. Their
+unique metabolism, versatility and intricate interactions contribute to
+important steps of the elements’ biogechemical cycles.
 </p>
 </right> <br> <right>
 <p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">
-My interests reside on studying the biogegraphical distributions of microbial communities; from virueses to phytoplankton. How these distributions determine ecological clusters through latitudinal gradients is a question, I believe, will provide a more accurate biological framework to understand and model the impact of microbes to the ocean and the atmosphere.
+My interests reside on studying the biogegraphical distributions of
+microbial communities; from virueses to phytoplankton. How these
+distributions determine ecological clusters through latitudinal
+gradients is a question, I believe, will provide a more accurate
+biological framework to understand and model the impact of microbes to
+the ocean and the atmosphere.
 </p>
 </right> <br> <right>
 <p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">
-How microbial transport across these regions, seasonality and biological interactions will be affected under the ocean warming scenario and what will be the effects on the global biogeochemistry are driving questions of my research.
+How microbial transport across these regions, seasonality and biological
+interactions will be affected under the ocean warming scenario and what
+will be the effects on the global biogeochemistry are driving questions
+of my research.
 </p>
 </right>
 </div>
 <div class="column" style="background-color:white">
-<br> <img src="images/Fig2b_new1.png" style="width:90%; align="center">
+<br> &lt;img src=“images/Fig2b_new1.png” style=“width:90%;
+align=”center”&gt;
 <figcaption>
 <p style="font-size:12px;">
-Diagram depicting the shifts in the subpolar phytoplankton community composition. Top: Winter. Bottom: Spring (Bolaños et al., 2020)
+Diagram depicting the shifts in the subpolar phytoplankton community
+composition. Top: Winter. Bottom: Spring (Bolaños et al., 2020)
 </figcaption>
 </div>
 </div>
@@ -348,30 +356,45 @@ Minimal Genomes: Ecology and Evolution
 </h2>
 <div class="row">
 <div class="column" style="background-color:white;">
-<br> <img src="images/S11.png" style="width:90%; align="center">
+<br> &lt;img src=“images/S11.png” style=“width:90%; align=”center”&gt;
 <figcaption>
 <p style="font-size:12px;text-align:justify">
-Pelagibacter ubique HTCC1062 infected with HTVC011P. P. ubique, strain HTCC1062, is known to be one of smallest and simplest, self-replicating, and free living cell (Y Zhao et al. Nature 494, 357-360, 2013 <a href="doi:10.1038/nature11921" class="uri">doi:10.1038/nature11921</a>)
+Pelagibacter ubique HTCC1062 infected with HTVC011P. P. ubique, strain
+HTCC1062, is known to be one of smallest and simplest, self-replicating,
+and free living cell (Y Zhao et al. Nature 494, 357-360, 2013 <a
+href="doi:10.1038/nature11921" class="uri">doi:10.1038/nature11921</a>)
 </figcaption>
 <br> <b>
 <p style="font-size:16px">
-<cite>&quot;SAR11 is one of the most exciting puzzles of contemporary microbiology&quot;</cite></b> Ass. Prof. A. Murat Eren
+<cite>“SAR11 is one of the most exciting puzzles of contemporary
+microbiology”</cite></b> Ass. Prof. A. Murat Eren
 </p>
 </div>
 <div class="column" style="background-color:white">
 <right>
 <p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">
-The minimal genome concept hypothetize that a cell can live and replicate with a bare minimum set of essential genes. Some naturally recurring bacteria have reduced genomes, specially those that live as intracellular symbionts and have delegated many of their functions to their hosts.
+The minimal genome concept hypothetize that a cell can live and
+replicate with a bare minimum set of essential genes. Some naturally
+recurring bacteria have reduced genomes, specially those that live as
+intracellular symbionts and have delegated many of their functions to
+their hosts.
 </p>
 <p></right></p>
 <right>
 <p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">
-My interests reside on two fascinating groups of organisms: SAR11 and Mycoplasma spp. SAR11 is not only the most abundant planktonic cell in the surface ocean, it has the smallest self-replicating genome. With large effective population sizes, SAR11 is a highly diverse group of bacteria. The minnimalism, efficiency and metabolic versatility of SAR11 makes it one of the most succesfull organisms on earth.
+My interests reside on two fascinating groups of organisms: SAR11 and
+Mycoplasma spp. SAR11 is not only the most abundant planktonic cell in
+the surface ocean, it has the smallest self-replicating genome. With
+large effective population sizes, SAR11 is a highly diverse group of
+bacteria. The minnimalism, efficiency and metabolic versatility of SAR11
+makes it one of the most succesfull organisms on earth.
 </p>
 <p></right></p>
 <right>
 <p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">
-Mycoplasma is found naturally as symbiont of multiple organisms. It is a key model to reconstruct a minimal genome and synthetic biology experimentation.
+Mycoplasma is found naturally as symbiont of multiple organisms. It is a
+key model to reconstruct a minimal genome and synthetic biology
+experimentation.
 </p>
 </right> <br>
 </div>
@@ -384,24 +407,44 @@ Eukaryotic-Bacteria Symbiosis
 <div class="column" style="background-color:white;">
 <right>
 <p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">
-Since the proposal of the serial endosymbiotic theory of the eukaryotic cell genesis by Lynn Margulis, symbiosis has been recognized as a fundamental driver of evolution. In the biological space of possibilities, multiple and diverse bacteria-eukaryotic associations have been studied, from insect endosymbionts to the gut microbiome of mammals.
+Since the proposal of the serial endosymbiotic theory of the eukaryotic
+cell genesis by Lynn Margulis, symbiosis has been recognized as a
+fundamental driver of evolution. In the biological space of
+possibilities, multiple and diverse bacteria-eukaryotic associations
+have been studied, from insect endosymbionts to the gut microbiome of
+mammals.
 </p>
 </right> <br> <right>
 <p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;">
-My PhD thesis uncovered a divergent bacteria that we hypothesized are ancient endosymbionts of scorpions and widespread in non-insect arthropods. On land and in aquatic environments, invertebrates compose a large fraction of the biomass and its associations with arthropods have an important effect on their fitness, which may impact in multiple ways the stability of the ecosystems and the evolution of the organisms. How these associations will be affected under warming scenarios and other disturbances cuased by climate change constitutes a fundamental interest to my research.
+My PhD thesis uncovered a divergent bacteria that we hypothesized are
+ancient endosymbionts of scorpions and widespread in non-insect
+arthropods. On land and in aquatic environments, invertebrates compose a
+large fraction of the biomass and its associations with arthropods have
+an important effect on their fitness, which may impact in multiple ways
+the stability of the ecosystems and the evolution of the organisms. How
+these associations will be affected under warming scenarios and other
+disturbances cuased by climate change constitutes a fundamental interest
+to my research.
 </p>
 </right> <br>
 </div>
 <div class="column" style="background-color:white">
-<br> <img src="images/coev.png" style="width:100%; align="right">
+<br> &lt;img src=“images/coev.png” style=“width:100%; align=”right”&gt;
 <figcaption>
 <p style="font-size:12px;">
-Comparison of scorpion and symbiont phylogenies suggesting a coespeciation process (Bolaños et al., 2019)
+Comparison of scorpion and symbiont phylogenies suggesting a
+coespeciation process (Bolaños et al., 2019)
 </figcaption>
 </div>
 </div>
 <br> <br> <br> <br> <br> <br>
 </html>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
 
