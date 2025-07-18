@@ -41,8 +41,13 @@ output: html_document
   </div>
   <div class="column" style="background-color:white">
   <br>
-<img src="images/Fig2b_new1.png" style="width:90%; align="center">
-<figcaption><p style="font-size:12px;"> Diagram depicting the shifts in the subpolar phytoplankton community composition. Top: Winter. Bottom: Spring (Bolaños et al., 2020) </figcaption>
+<img src="images/Fig2b_new1.png" style="width:90%; display:block; margin-left:auto; margin-right:auto;">
+<figcaption>
+  <p style="font-size:12px; text-align:center;">
+    Diagram depicting the shifts in the subpolar phytoplankton community composition. Top: Winter. Bottom: Spring (Bolaños et al., 2020)
+  </p>
+</figcaption>
+
   </div>
 </div>
 <br>
@@ -57,10 +62,16 @@ output: html_document
 <div class="row">
   <div class="column" style="background-color:white;">
 <br>
-<img src="images/S11.png" style="width:90%; align="center">
-<figcaption><p style="font-size:12px;text-align:justify"> Pelagibacter ubique HTCC1062 infected with HTVC011P. P. ubique, strain HTCC1062, is known to be one of smallest and simplest, self-replicating, and free living cell (Y Zhao et al. Nature 494, 357-360, 2013 doi:10.1038/nature11921) </figcaption>
+<img src="images/S11.png" style="width:90%; display:block; margin-left:auto; margin-right:auto;">
+<figcaption>
+  <p style="font-size:12px; text-align:justify;">
+    Pelagibacter ubique HTCC1062 infected with HTVC011P. P. ubique, strain HTCC1062, is known to be one of the smallest and simplest, self-replicating, and free-living cells (Y Zhao et al. Nature 494, 357-360, 2013 doi:10.1038/nature11921)
+  </p>
+</figcaption>
 <br>
-<b><p style=font-size:16px><cite>"SAR11 is one of the most exciting puzzles of contemporary microbiology"</cite></b> Ass. Prof. A. Murat Eren </p>
+<p style="font-size:16px;">
+  <b><cite>"SAR11 is one of the most exciting puzzles of contemporary microbiology"</cite></b> A. Murat Eren
+</p>
 
   </div>
   <div class="column" style="background-color:white">
@@ -86,13 +97,16 @@ output: html_document
 <br>
 <right><p style="font-family:Geneva;color:black;text-align:justify;font-size:16px;"> My PhD thesis uncovered a divergent bacteria that we hypothesized are ancient endosymbionts of scorpions and widespread in non-insect arthropods. On land and in aquatic environments, invertebrates compose a large fraction of the biomass and its associations with arthropods have an important effect on their fitness, which may impact in multiple ways the stability of the ecosystems and the evolution of the organisms. How these associations will be affected under warming scenarios and other disturbances cuased by climate change constitutes a fundamental interest to my research. </p></right>
 <br>
-  </div>
-  <div class="column" style="background-color:white">
+</div>
+<div class="column" style="background-color:white">
   <br>
-<img src="images/coev.png" style="width:100%; align="right">
-<figcaption><p style="font-size:12px;"> Comparison of scorpion and symbiont phylogenies suggesting a coespeciation process (Bolaños et al., 2019) </figcaption>
-
-  </div>
+  <img src="images/coev.png" style="width:100%; display:block; margin-left:auto; margin-right:0;">
+  <figcaption>
+    <p style="font-size:12px; text-align:right;">
+      Comparison of scorpion and symbiont phylogenies suggesting a coevolution process (Bolaños et al., 2019)
+    </p>
+  </figcaption>
+</div>
 </div>
 <br>
 <br>

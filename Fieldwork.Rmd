@@ -13,9 +13,9 @@ name: Fieldwork
 [**Tiny organisms, giant impact**](https://climate.nasa.gov/news/2621/tiny-organisms-giant-impact/)<br>
 
 
-#{.tabset .tabset-fade .tabset-pills}
 ***
 ## NAAMES 2
+
 <p style="font-family:Geneva;text-align:left;color:black;font-size:16px;">NAAMES 2 took place in May 2016. Departing from Woodshole, MA to our first station at latitude ~51 N.</p> <br>
 <p align="middle">
 <img src="images/yo_n2.jpg" style="width:32%; border:1px solid black">
